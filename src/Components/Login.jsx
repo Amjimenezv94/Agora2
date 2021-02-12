@@ -1,17 +1,18 @@
-import React, { Component } from 'react';
+import React from 'react';
 import icon3 from '../assets/IMG/icon3.png';
 import '../assets/styles/login.css';
+import logo from '../assets/IMG/logo-friends-marketing-morado.svg'
 
-class Login extends Component {
-    render() {
+export default function Login () {
+    
         return (
 
             <div className="container">
                 <body className="text-center ">
                    <main className="form-singin">
                        <form >
-                           <img className="mb-4" src={icon3} alt="" width="72" height="60"/>
-                           <h1 className="h4 mb-3 fw-normal"> Incia sesión para ingresar a la asamblea</h1>
+                           <img className="mb-4" src={icon3} alt="" width="80" height="80"/>
+                           <h1 className="h6 mb-3 fw-normal"> Incia sesión para ingresar a la asamblea</h1>
                            <label for= "inputUser" className="visually-hidden"> Usuario </label>
                            <input type="text" id="inputUser" className="form-control" placeholder="Usuario" required autoFocus/>
                            <br/>
@@ -37,6 +38,5 @@ class Login extends Component {
     )
 }
 
-}
 
-export default Login
+

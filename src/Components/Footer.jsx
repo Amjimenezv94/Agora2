@@ -1,16 +1,20 @@
-import React, { Component } from 'react'
+import React  from 'react';
 import FacebookIcon from '../assets/IMG/FacebookIcon.png';
 import InstagramIcon from '../assets/IMG/InstagramIcon.png';
 import TwitterIcon from '../assets/IMG/twitter.png';
 
 
 
-class Footer extends React.Component {
+export default function Footer() {
 
-    render() {
+    
         return (
-            <footer className="footer">
-                <div className="container d-flex flex-column flex-md-row justify-content-between">
+            <footer class="mastfoot mt-auto">
+            <div class="inner">
+             
+              <p> Software <a href="../Pages/Home.jsx">Agora</a>, by <a href="https://twitter.com/mdo">Marketing Agency</a>.</p>
+              <p>
+                
                     <a className="py-2" href="https://www.facebook.com/friendsmkt" aria-label="Product">
                         <img className="mr-5" src={FacebookIcon} width="40" height="36" fill="none" stroke="currentColor" alt="" />
                     </a>
@@ -21,9 +25,17 @@ class Footer extends React.Component {
                         <img className="" src={TwitterIcon} width="40" height="40" fill="none" stroke="currentColor"  alt="" />
                     </a>
 
-                </div>
+                    
 
-            </footer>
+              </p>
+
+              <p>
+
+                    
+              </p>
+           
+            </div>
+          </footer>
 
 
 
@@ -31,6 +43,4 @@ class Footer extends React.Component {
 
         );
     }
-}
 
-export default Footer;
